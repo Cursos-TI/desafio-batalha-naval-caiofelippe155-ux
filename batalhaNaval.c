@@ -18,10 +18,9 @@ int main() {
 
     //Validar os limites do navio horizontal
 
-    colunaHorizontal = 9;
     if (colunaHorizontal + 3 <= 10) {
         for (int i = 0; i < 3; i++) {
-            tabuleiro[linhaHorizontal][colunaHorizontal + i] = 1;
+            tabuleiro[linhaHorizontal ][colunaHorizontal + i] = navioHorizontal[i];
         }
     } else {
         printf("Posição inválida para o navio horizontal.\n");
@@ -32,7 +31,7 @@ int main() {
     printf("TABULEIRO BATALHA NAVAL\n\n");
     if (linhaVertical + 3 <= 10) {
         for (int i = 0; i < 3; i++) {
-            tabuleiro[linhaVertical + i][colunaVertical] = 1;
+            tabuleiro[linhaVertical + i][colunaVertical] = navioVertical[i];
         }
     } else {
         printf("Posição inválida para o navio vertical.\n");
